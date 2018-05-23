@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "outDir": "./dist",
+        "lib":[
+            "es2017",
+            "dom"
+        ],
+        "typeRoots": [
+            "node-modules/@types"
+        ]
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "premiere-appli",
+  "version": "1.0.0",
+  "dependencies": {
+    "@angular/common": "6.0.2",
+    "@angular/compiler": "6.0.2",
+    "@angular/core": "6.0.2",
+    "@angular/platform-browser": "6.0.2",
+    "@angular/platform-browser-dynamic": "6.0.2",
+    "core-js": "2.5.6",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "6.1.0",
+    "zone.js": "0.8.26"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^2.30.1",
+    "ts-loader": "^2.3.6",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
