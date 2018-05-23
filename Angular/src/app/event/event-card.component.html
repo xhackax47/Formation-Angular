@@ -1,10 +1,19 @@
 <h3 [ngClass]="{'activee':isActivated}" id='titre'>Ceci est une carte</h3>
 <div class="event-card-content">
     <p>Contenu de la carte : {{ card | uppercase | slice:0:10}}</p>
-    <p>Le nombre de points de vie est de : {{2*12}}</p>
+    <p>Le nombre de points de vie est de : {{ 2*12+(1+3) }}</p>
     <p>La classe du joueur est : {{ classePlyr() }}</p>
     <span textContent="{{span}}"></span><br><br>
     <span [textContent]="span2"></span>
     <p id="nom" *ngIf="nom.length>4" [textContent]="nom"></p>
 </div>
 <button (click)="changeColor()">Cliquez moi</button>
+<hr>
+<form
+    #myForm="ngForm"
+    (ngSubmit)="submitForm(myForm.value)">
+    <label>Nom de joueur</label><input type="text" name="playerName>" ngModel>
+    <label>Classe de joueur</label><input type="text" name="className>" ngModel>
+    <label>Niveau de joueur</label><input type="text" name="level>" ngModel>
+    <button type="submit">Creer joueur</button>
+</form>

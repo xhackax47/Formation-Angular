@@ -24,4 +24,8 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
         this.eventChangeColor.emit(this.nom);
         this.isActivated = !this.isActivated;
     };
+
+    public submitForm(value) {
+        console.log(value);
+    }
 }
