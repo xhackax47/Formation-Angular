@@ -7,7 +7,7 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
 
 }) export class EventCardComponent {
     
-    private card : string = 'As de pique';
+    private card : string = 'Carte de joueur';
     private span : string = 'Span1';
     private span2 : string = "Span2";
 
@@ -16,8 +16,8 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
     @Input() public nom : string = "Hacka";
     @Output() eventChangeColor = new EventEmitter();
 
-    public subTitles() {
-        return "SUBTITLE";
+    public classePlyr() {
+        return "Guerrier";
     };
 
     public changeColor() {

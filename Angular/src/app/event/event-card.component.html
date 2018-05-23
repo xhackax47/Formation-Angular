@@ -1,8 +1,8 @@
 <h3 [ngClass]="{'activee':isActivated}" id='titre'>Ceci est une carte</h3>
 <div class="event-card-content">
-    <p>Contenu de la carte : {{card}}</p>
-    <p>Le resultat de l'opération 4 + 3 est : {{4+3}}</p>
-    <p>Le sous titre est : {{ subTitles() }}</p>
+    <p>Contenu de la carte : {{ card | uppercase | slice:0:10}}</p>
+    <p>Le nombre de points de vie est de : {{2*12}}</p>
+    <p>La classe du joueur est : {{ classePlyr() }}</p>
     <span textContent="{{span}}"></span><br><br>
     <span [textContent]="span2"></span>
     <p id="nom" *ngIf="nom.length>4" [textContent]="nom"></p>
