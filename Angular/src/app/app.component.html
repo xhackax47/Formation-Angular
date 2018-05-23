@@ -18,9 +18,7 @@
   </li>
 </ul>
 
-
+<app-event-card></app-event-card>
 <app-event-card [nom]="user1" (eventChangeColor)="listenEvent($event)"></app-event-card>
 <app-event-card [nom]="user2"></app-event-card>
-<app-event-card></app-event-card>
-<app-event-card></app-event-card>
-<app-event-card></app-event-card>
+<app-event-card *ngFor="let carte of listCards" [nom]="carte" (eventChangeColor)="listenEvent($event)"></app-event-card>

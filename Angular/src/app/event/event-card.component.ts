@@ -11,6 +11,8 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
     private span : string = 'Span1';
     private span2 : string = "Span2";
 
+    private isActivated = false;
+
     @Input() public nom : string = "Hacka";
     @Output() eventChangeColor = new EventEmitter();
 
@@ -20,5 +22,6 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
 
     public changeColor() {
         this.eventChangeColor.emit(this.nom);
+        this.isActivated = !this.isActivated;
     };
 }

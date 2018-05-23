@@ -10,6 +10,14 @@ export class AppComponent {
   user1: string = 'Utilisateur 1';
   user2: string = 'Utilisateur 2';
 
+  listCards : string [] = [
+    'Orc',
+    'Humain',
+    'Mort-Vivant',
+    'Elfe',
+    'Tauren'
+  ];
+
   public listenEvent(evt) {
     console.log("Listening Events....");
     console.log("Event changeColor detected !!!")

@@ -5,5 +5,16 @@ body{
 }
 
 p{
-    color:green;
+    color:firebrick;
+    font-weight: bold;
+}
+
+#nom{
+    color: blue;
+    text-decoration: underline;
+}
+
+.activee{
+    background-color: yellowgreen;
+    
 }
