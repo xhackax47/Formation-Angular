@@ -1,0 +1,15 @@
+.event-card-content{
+    background-color: beige;
+    border: solid blue 1px;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    color:red;
+}
+
+span{
+    color:black;
+}

@@ -1,0 +1,10 @@
+<h3 id='titre'>Ceci est une carte</h3>
+<div class="event-card-content">
+    <p>Contenu de la carte : {{card}}</p>
+    <p>Le resultat de l'opération 4 + 3 est : {{4+3}}</p>
+    <p>Le sous titre est : {{ subTitles() }}</p>
+    <span textContent="{{span}}"></span><br><br>
+    <span [textContent]="span2"></span>
+    <p>{{nom}}</p>
+</div>
+<button (click)="changeColor()">Cliquez moi</button>
