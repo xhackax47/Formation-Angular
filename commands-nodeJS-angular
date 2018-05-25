@@ -1,0 +1,33 @@
+NODE JS
+
+Installer :
+
+V8.X
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo apt-get install -y build-essential
+
+V10.X
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y nodejs
+sudo apt-get install -y build-essential
+
+Config : 
+
+sudo
+npm install (Installer Modules Nodes)
+npm install --save reflect-metadata (Installer Module reflect-metadata et le sauvegarder dans la config TS)
+npm install -g @angular/cli (Installer Module Angular CLI)
+npm link typescript OU npm install typescript (Lier TypeScript à Angular ou l'installer)
+$(npm bin)/webpack-dev-server --progress --inline (Compiler avec Webpack et deployer sur un serveur de Développement)
+$(npm bin)/webpack --progress (Compiler avec Webpack)
+
+
+ANGULAR(localhost:4200)
+
+ng new NomProjet (Créer un nouveau projet Angular)
+ng generate (Générer)
+ng generate service [name] (Générer un service Angular)
+ng serve (Déployer sur serveur)
+npm run lint (Vérification des regles d'ecriture dans les fichiers)
+
