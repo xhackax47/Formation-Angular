@@ -24,7 +24,7 @@ export class AppReactiveFormComponent implements OnInit {
   }
 
   validatorAgePair(controle) {
-    if (controle.value.trim().lenght == 0) {
+    if (controle.value.trim().length == 0) {
       return null;
     }
     if (controle.value % 2 === 0) {

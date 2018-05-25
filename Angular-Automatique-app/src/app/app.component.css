@@ -1,0 +1,9 @@
+h1 {
+    color: firebrick;
+    border: 1px solid salmon;
+    border-radius: 20px;
+}
+
+html {
+    background-color: black;
+}

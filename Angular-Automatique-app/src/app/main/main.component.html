@@ -1,0 +1,7 @@
+<app-event-card
+*ngFor="let card of listCards" 
+[name] = "card" 
+(eventColorChange)="listenEvent($event)"
+(eventChangeName)="changeName($event)"
+>
+</app-event-card>
