@@ -10,6 +10,7 @@
     *ngFor="let card of listCards" 
     [name] = "card" 
     (eventColorChange)="listenEvent($event)"
-    (eventChangeName)="listenEvent($event)">
+    (eventChangeName)="changeName($event)"
+    >
 </app-event-card>
 </div>

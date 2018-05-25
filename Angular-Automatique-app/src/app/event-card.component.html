@@ -1,6 +1,6 @@
 <h1 [ngClass]="{actived:isActive}">Ceci est une carte.</h1>
 <div class="event-card-content" customHighlight pendant="yellow" apres="grey">
-    Contenu de la carte. {{name | uppercase | slice:0:3}}SMOOSS<br />
+    Contenu de la carte. {{name | uppercase | slice:0:10}}<br />
     Le résultat de l'opération est : {{45+33}}<br />
     Le sous titre est : {{subtitle()}}<br/>
     <span *ngIf="name.length>4" [textContent]="name"></span><br/>
