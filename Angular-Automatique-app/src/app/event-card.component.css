@@ -1,0 +1,16 @@
+h1{
+    color:darkred;
+    width: 500px;
+    text-align: left;
+}
+div{
+    background-color: beige;
+    padding: 10px;
+    width: 500px;
+    text-align: left;
+    font-family: Tahoma;
+}
+button{
+    width:100px;
+    margin-left:300px;
+}

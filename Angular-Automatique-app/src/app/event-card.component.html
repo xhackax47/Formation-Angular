@@ -1,0 +1,16 @@
+<h1 [ngClass]="{actived:isActive}">Ceci est une carte.</h1>
+<div class="event-card-content" customHighlight pendant="yellow" apres="grey">
+    Contenu de la carte. {{name | uppercase | slice:0:3}}SMOOSS<br />
+    Le résultat de l'opération est : {{45+33}}<br />
+    Le sous titre est : {{subtitle()}}<br/>
+    <span *ngIf="name.length>4" [textContent]="name"></span><br/>
+</div>
+<button (click)="colorChange()">Biensur</button>
+<form
+    #monFormulaire="ngForm"
+    (ngSubmit)="sendForm(monFormulaire.value)">
+    <label>Auteur</label><input type="text" name="auteur" ngModel>
+    <label>Titre</label><input type="text" name="titre" ngModel>
+    <label>Année</label><input type="text" name="année" ngModel>
+    <button type="submit">Ajouter</button>
+</form>

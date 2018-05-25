@@ -1,0 +1,19 @@
+<h3>Ajouter un personnage</h3>
+<form
+  [formGroup]="formulaire"
+  (ngSubmit)="sendForm(formulaire.value)"
+>
+  <label for="personnage">Personnage</label>
+  <input type="text" name="personnage" formControlName="personnage">
+  <br />
+  <label for="role">Role</label>
+  <input type="text" name="role" formControlName="role">
+  <br />
+  <label for="age">Age</label>
+  <input type="text" name="age" formControlName="age">
+  <br />
+  <button type="submit" [disabled]="!formulaire.valid">Ajouter</button>
+</form>
+<div *ngIf="formulaire.controls.age.errors?.tooYoung" class="error">Vous êtes trop jeune.</div>
+<div *ngIf="formulaire.controls.age.errors?.tooOld" class="error">Beaucoup trop vieux.</div>
+<div *ngIf="formulaire.controls.age.errors?.impair" class="error">Vous êtes beaucoup trop impair.</div>
