@@ -27,6 +27,7 @@ ANGULAR(localhost:4200)
 
 ng new NomProjet (Créer un nouveau projet Angular)
 ng generate (Générer)
+ng generate componet [name] (Générer un composant Angular)
 ng generate service [name] (Générer un service Angular)
 ng serve (Déployer sur serveur)
 npm run lint (Vérification des regles d'ecriture dans les fichiers)
