@@ -32,3 +32,13 @@ ng generate service [name] (Générer un service Angular)
 ng serve (Déployer sur serveur)
 npm run lint (Vérification des regles d'ecriture dans les fichiers)
 
+CONFIG VISUAL STUDIO CODE POUR TERMINAL LINUX
+http://tazmenworld.com/ajouter-un-terminal-linux-dans-visual-studio-code-windows-10/
+
+{
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\bash.exe",
+    //"terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "git.ignoreMissingGitWarning": true,
+    "window.zoomLevel": 1,
+    "workbench.iconTheme": "vscode-icons"
+}
